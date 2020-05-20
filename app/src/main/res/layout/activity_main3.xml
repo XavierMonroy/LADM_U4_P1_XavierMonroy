@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".Main3Activity">
+
+    <Button
+        android:id="@+id/btnMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensaje" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#BDBCBC" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="TELÉFONO"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="NOMBRE DE CONTACTO"
+        android:inputType="textPersonName" />
+
+    <Switch
+        android:id="@+id/checkTelefono"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Agradable" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTRAR CONTACTO"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listaContactos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
